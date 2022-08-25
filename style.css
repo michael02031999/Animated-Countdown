@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@200;400;700&family=Montserrat:wght@400;700&family=Mulish:wght@200;400;600;700&family=Oswald:wght@400;700&family=Poppins:wght@400;700&family=Roboto+Mono:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto Mono", monospace;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#go {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  padding: 20px;
+  display: none;
+}
+
+#replay {
+  font-weight: 400;
+  font-size: 13px;
+  display: none;
+}
+
+.digit {
+  font-size: 50px;
+  color: rgb(52, 152, 218);
+}
+
+@keyframes rotate {
+  0%,
+  15% {
+    transform: rotate(0deg);
+  }
+
+  30% {
+    transform: rotate(-100deg);
+  }
+  35% {
+    transform: rotate(-90deg);
+  }
+  40% {
+    transform: rotate(-80deg);
+  }
+  45% {
+    transform: rotate(-90deg);
+  }
+
+  60% {
+    transform: rotate(-190deg);
+  }
+  65% {
+    transform: rotate(-180deg);
+  }
+  70% {
+    transform: rotate(-170deg);
+  }
+  75% {
+    transform: rotate(-180deg);
+  }
+
+  90%,
+  100% {
+    transform: rotate(-270deg);
+  }
+}
+
+#rotatingCircle {
+  position: absolute;
+  /*   position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  top: 42.5%;
+
+  animation: rotate 2s linear;
+}
+
+#digit3 {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  position: absolute;
+  left: 50%;
+  top: 15%;
+  transform: translate(-50%, -50%);
+}
+
+#digit2 {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  position: absolute;
+  top: 50%;
+  right: 0%;
+  transform: translate(-50%, -50%) rotate(90deg);
+}
+
+#digit1 {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(180deg);
+}
+
+#digit0 {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translate(-50%, -50%) rotate(270deg);
+}
+
+#getReady {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  position: absolute;
+  background-color: white;
+  width: 200px;
+  text-align: center;
+  height: 140px;
+  top: 60%;
+  padding-top: 5px;
+  transform: translateY(-50%);
+}
+
+.hidden {
+  display: none;
+}
